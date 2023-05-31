@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <h2>Basic Table Structure</h2>
+
+    <table>
+        <tr>
+            <td>15</td>
+            <td>15</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>60</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>60</td>
+            <td>55</td>
+        </tr>
+    </table>
+
+    <h2>Table Heading</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+        </tr>
+        <tr>
+            <th scope="row">Tickets Sold:</th>
+            <td>120</td>
+            <td>136</td>
+        </tr>
+        <tr>
+            <th scope="row">Total Sales</th>
+            <td>$800</td>
+            <td>$600</td>
+        </tr>
+    </table>
+
+    <h2>Spanning Columns</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th>9am</th>
+            <th>10am</th>
+            <th>11am</th>
+            <th>12am</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td colspan="2"style="background-color: red" >Geography</td>
+            <td>Math</td>
+            <td>Art</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="3" style="background-color: blueviolet;">Gym</td>
+            <td>Home Ec</td>
+        </tr>
+    </table>
+
+    <h2>Spanning Rows</h2>
+    <table>
+        <tr>
+            <th>
+                <th>ABC</th>
+                <th>BBC</th>
+                <th>CNN</th>
+            </th>
+        </tr>
+        <tr>
+            <th>6pm -7pm</th>
+            <td rowspan="2" style="background-color: yellow;">Movie</td>
+            <td>Comedy</td>
+            <td>News</td>
+        </tr>
+        <tr>
+            <th>7pm -8pm</th>
+            <td>Sport</td>
+            <td>Current Affairs</td>
+        </tr>
+    </table>
+
+    <h2>Long Tables</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Income</th>
+                <th>Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1st Jan</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>2st Jan</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>3rd Jan</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>4th Jan</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>5th Jan</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>6th Jan</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>29th Jan</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>30th Jan</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>31st Jan</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>7468</td>
+                <td>7439</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

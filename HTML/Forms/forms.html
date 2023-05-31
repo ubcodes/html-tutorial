@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms In HTML</h1>
+    <h2>Forms Structure</h2>
+    <form action="" method="">
+      <p>
+        Username :
+        <input type="text" name="Username" size="15" maxlength="30" placeholder="Enter your name" />
+      </p>
+      <p>
+        Password :
+        <input type="password" name="Password" ize="15" maxlength="30" required placeholder="enter your password" />
+      </p>
+      <p>Enter your Email:
+        <input type="email" name="email">
+        </p>
+      
+      <p>Enter the url of your website
+        <input type="url" name="website">
+      </p>
+      <!-- RADIO BUTTONs  -->
+      <p>
+        Select your favorite sport:
+        <br />
+        <input type="radio" name="sports" value="badminton" checked="checked" />
+        Badminton <input type="radio" name="sports" value="football" /> Football
+        <input type="radio" name="sports" value="volleyball" />Volleyball
+      </p>
+
+      <!-- CHECKBOX -->
+      <p>
+        Select your the fruits you like:
+        <br />
+        <input type="checkbox" name="fruits" value="orange" checked /> Orange
+        <input type="checkbox" name="fruits" value="watermelon" />Watermelon
+        <input type="checkbox" name="fruits" value="banana" />Bananna
+      </p>
+
+      <!-- Drop Down List Box -->
+      <p>What device do you prefer</p>
+      <select name="devices" id="">
+        <option value="ipod">iPod</option>
+        <option value="Radio">Radio</option>
+        <option value="iPhone">iPhone</option>
+        <option value="Andriod">Andriod</option>
+      </select>
+
+      <!-- TEXT AREA -->
+      <p>Tell us about yourself</p>
+      <textarea name="About" id="" cols="30" rows="10">
+Tells us about yourself</textarea
+      >
+      <br />
+
+      <!-- Date Input -->
+      <label for="birth">Date Of birt</label>
+      <input type="date" name="birth">
+      
+      <!-- Search Input -->
+      <p>Searh:</p>
+      <input type="search" name="search" placeholder="enter a keyword">
+      <input type="submit" value="search">
+
+      <!-- FILE INPUT -->
+      <p>Upload your resume</p>
+      <input type="file" name="resume" /> <br />
+      <input type="submit" value="Upload" /> <br><br>
+
+      <!-- SUBMIT BUTTON -->
+      <input type="submit" name="subscribe" value="Subscribe">
+      <input type="submit" name="submit" value="submit">
+      <button>Submit</button> <br><br><hr>
+
+      <!-- LABELLING FORM CONTROLS -->
+      <!-- 
+        How to use Labels
+        1. Wrapping around both the text description and the form input
+       -->
+       <h3>Using Labels</h3>
+       <label for="">Age: <input type="text" name="age"></label><br><br>
+
+       <!-- 2. Seperate label from the form anduse the for attribute to indicate which form you're refering too -->
+       Gender :
+       <input type="radio" id="female" name="gender" value="f">
+       <label for="female">Female</label>
+       <input type="radio" id="male" name="gender" value="m">
+       <label for="male">Male</label>
+    </form>
+
+
+    <h2>Field set</h2>
+    <p>Fieldset groups related form controls together </p>
+    <fieldset>
+        <legend>Contact Deetails</legend>
+        <label for="">Email: <br>
+        <input type="text" name="email">
+        </label><br>
+        <label for="">
+            Mobile:
+            <br>
+            <input type="text" name="telephone">
+        </label>
+    </fieldset>
+
+
+  </body>
+</html>
